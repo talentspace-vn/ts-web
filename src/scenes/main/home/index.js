@@ -1,27 +1,20 @@
 import React from 'react'
-import { DatePicker, message } from 'antd';
 
 
 class Home extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        date: '',
-      };
-    }
-    handleChange(date) {
-      message.info('Selected Date: ' + date.toString());
-      this.setState({ date });
-    }
-    render() {
-      return (
-        <div style={{ width: 400, margin: '100px auto' }}>
-          <DatePicker onChange={value => this.handleChange(value)} />
-          <div style={{ marginTop: 20 }}>Date: {this.state.date.toString()}</div>
-        </div>
-      );
-    }
+  constructor(props) {
+    super(props);
+
   }
-  
+
+  render() {
+    return (
+      <div style={{ width: 400, margin: '100px auto' }}>
+        Welcome
+        </div>
+    );
+  }
+}
+
 
 export default Home
