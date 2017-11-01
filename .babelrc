@@ -1,6 +1,6 @@
 {
     "presets": [
-        "react-native",
+        "react",
         "flow"
     ],
     "retainLines": true
