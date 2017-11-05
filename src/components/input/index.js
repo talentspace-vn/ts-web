@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import './input.less'
 import { Input } from 'antd';
 
 
-export default class TSInput extends Component {
+export default class TSInput extends PureComponent {
     render() {
         return (
             <div className={this.props.className}>
