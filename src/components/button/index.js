@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import './index.less'
+import classNames from 'classnames';
+
 export default class Button extends Component {
     constructor() {
         super()
-        this.classButton = this.classButton.bind(this)
     }
-    classButton() {
-        return this.props.type === 'primary' ? "bt-primary" : "bt-outline";
-    }
+
     render() {
         const buttonStyle = {
             color: `${this.props.color}`,
@@ -15,7 +14,11 @@ export default class Button extends Component {
             borderRadius: `${this.props.borderRadius}px`,
 
         };
-        return <button className={this.classButton()} style={buttonStyle}> {this.props.children}</button>
+        var btnClass = classNames({
+            'bt-primary': this.props.type === 'primary',
+            'bt-outline': this.props.type === 'default',
+        });
+        return <button className={btnClass} style={buttonStyle}> {this.props.children}</button>
     }
 }
 
