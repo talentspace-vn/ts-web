@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import './header.less';
 import { Row, Col } from 'antd';
 import logo from '../../assets/images/logo-header.svg'
-import Button from '../../components/button'
+import TSButton from '../../components/button'
 const Header = () => (
     <header className="header">
 
@@ -22,11 +22,12 @@ const Header = () => (
                 </ul>
             </Col>
             <Col span={6}>
-                <Button >Sign In</Button>
-                <Button type="primary"> Apply </Button>
+                <TSButton className="button-top">Sign In</TSButton>
+                <TSButton type="primary"> Apply </TSButton>
 
             </Col>
         </Row>
+        <div className="boder-bottom"></div>
     </header>
 )
 
