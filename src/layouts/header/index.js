@@ -22,8 +22,8 @@ const Header = () => (
                 </ul>
             </Col>
             <Col span={6}>
-                <TSButton className="button-top">Sign In</TSButton>
-                <TSButton type="primary"> Apply </TSButton>
+                <TSButton className="button-signin">Sign In</TSButton>
+                <TSButton className="button-apply" type="primary"> Apply </TSButton>
 
             </Col>
         </Row>
