@@ -13,7 +13,7 @@ const Header = () => (
                 <img src={logo} className="logo" alt="logo" />
             </Col>
             <Col span={12}>
-                <ul>
+                <ul >
                     <li><a>JOBS</a></li>
                     <li><a>CANDIDATES</a></li>
                     <li><a>EMPLOYERS</a></li>
