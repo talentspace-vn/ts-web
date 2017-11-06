@@ -1,21 +1,19 @@
-import React from 'react'
-import './home.less'
-import SearchSection from './components/search-section'
-import FeatureJobSection from './components/features-job-section'
-class Home extends React.Component {
-  constructor(props) {
-    super(props);
 
-  }
+import React from 'react';
+import './home.less';
+import SearchSection from './components/search-section';
+import FeatureJobSection from './components/features-job-section'
+
+class Home extends React.Component {
   render() {
     return (
       <div >
-        <SearchSection></SearchSection>
-        <FeatureJobSection></FeatureJobSection>
+        <SearchSection />
+        <FeatureJobSection />
       </div>
     );
   }
 }
 
 
-export default Home
+export default Home;
