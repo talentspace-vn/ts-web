@@ -6,7 +6,6 @@
     letter-spacing: 1.5px;
     outline: 0px;
     cursor: pointer;
-    min-width: 116px;    
 }
 
 .bt-outline {
@@ -20,4 +19,17 @@
     &:extend(.bt);
     background-color: #e94347;
     border: none;
+}
+
+.bt-green {
+    &:extend(.bt);
+    background-color: #2dcb50;
+    border: none;
+}
+
+.bt-green-border {
+    &:extend(.bt-outline);
+    border: 1px solid #2dcb50;
+    color: #2dcb50;
+    
 }
