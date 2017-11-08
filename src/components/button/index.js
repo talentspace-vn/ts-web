@@ -9,6 +9,8 @@ export default class TSButton extends Component {
     const btnClass = classNames({
       'bt-primary': this.props.type === 'primary',
       'bt-outline': this.props.type === 'default',
+      'bt-green': this.props.type === 'green',
+      'bt-green-border': this.props.type === 'green-border'
     }, this.props.className);
     return btnClass;
   }
@@ -45,7 +47,7 @@ TSButton.propTypes = {
 TSButton.defaultProps = {
   height: 32,
   borderRadius: 100,
-  color: 'white',
+  color: '',
   width: 116,
   type: 'default'
 };

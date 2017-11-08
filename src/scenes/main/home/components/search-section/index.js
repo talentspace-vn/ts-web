@@ -9,7 +9,7 @@ import TSSelect from '../../../../../components/select';
 export default class SearchSection extends Component {
   render() {
     return (
-      <section>
+      <section className="search-section">
         <Row className="row">
           <Col span={20} offset={2}>
             <p className="search-title">MEET GREAT COMPANY <span>.</span> GET YOUR DREAM JOB <span>.</span></p>
