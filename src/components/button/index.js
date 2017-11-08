@@ -10,7 +10,8 @@ export default class TSButton extends Component {
       'bt-primary': this.props.type === 'primary',
       'bt-outline': this.props.type === 'default',
       'bt-green': this.props.type === 'green',
-      'bt-green-border': this.props.type === 'green-border'
+      'bt-green-border': this.props.type === 'green-border',
+      'bt-bg-white': this.props.type === 'background-white'
     }, this.props.className);
     return btnClass;
   }
