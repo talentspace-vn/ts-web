@@ -24,7 +24,7 @@ export default class SearchSection extends Component {
                   <TSSelect className="search-select" title="Location" />
                 </Col>
                 <Col span={6}>
-                  <TSButton className="search-button-top" type="primary" height={50} borderRadius={4} width={185}>FIND JOB</TSButton>
+                  <TSButton className="search-button-top" type="primary" height={50} borderRadius={4} width={185} color="white">FIND JOB</TSButton>
                 </Col>
               </Row>
             </div>
