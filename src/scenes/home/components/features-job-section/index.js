@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'antd';
 
 import './features-job.less';
-import FeatureJobCard from '../../../../../components/feature-job-card';
+import FeatureJobCard from '../../../../components/feature-job-card';
 
 export default class FeatureJobSection extends Component {
   render() {

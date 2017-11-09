@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Row, Col } from 'antd';
 
 import './search-section.less';
-import TSInput from '../../../../../components/input';
-import TSButton from '../../../../../components/button';
-import TSSelect from '../../../../../components/select';
+import TSInput from '../../../../components/input';
+import TSButton from '../../../../components/button';
+import TSSelect from '../../../../components/select';
 
 export default class SearchSection extends Component {
   render() {
