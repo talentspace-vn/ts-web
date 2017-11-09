@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Row, Col } from 'antd';
 import './apply-section.less';
-import TSButton from '../../../../../components/button';
+import TSButton from '../../../../components/TSButton';
 
 export default class ApplySection extends PureComponent {
   render() {

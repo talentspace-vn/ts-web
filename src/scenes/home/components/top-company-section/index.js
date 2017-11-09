@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'antd';
-import TopCompanyCard from '../../../../../components/top-company-card';
+import TopCompanyCard from '../../../../components/top-company-card';
 import './top-company.less';
 
 export default class TopCompanySection extends Component {

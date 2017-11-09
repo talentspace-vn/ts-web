@@ -1,36 +1,37 @@
 import React, { Component } from 'react';
+import { Button } from 'antd';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import './index.less';
 
 export default class TSButton extends Component {
-  _btnClassNames() {
-    const btnClass = classNames({
-      'bt-primary': this.props.type === 'primary',
-      'bt-outline': this.props.type === 'default',
-      'bt-green': this.props.type === 'green',
-      'bt-green-border': this.props.type === 'green-border',
-      'bt-bg-white': this.props.type === 'background-white'
+  _generateClassname() {
+    const btnClass = classNames('tsButton', {
+      'tsButton--primary': this.props.type === 'primary',
+      'tsButton--outline': this.props.type === 'default',
+      'tsButton--green': this.props.type === 'green',
+      'tsButton--green-border': this.props.type === 'green-border'
     }, this.props.className);
     return btnClass;
   }
 
-  _btnStyles() {
+  _generateStyles() {
     const buttonStyle = {
       color: `${this.props.color}`,
       height: `${this.props.height}px`,
       borderRadius: `${this.props.borderRadius}px`,
       width: `${this.props.width}px`
-
     };
     return buttonStyle;
   }
 
   render() {
-    return (<button className={this._btnClassNames()} style={this._btnStyles()}>
-      {this.props.children}
-    </button>);
+    return (
+      <Button className={this._generateClassname()} style={this._generateStyles()}>
+        {this.props.children}
+      </Button>
+    );
   }
 }
 
