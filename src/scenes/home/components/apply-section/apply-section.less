@@ -1,9 +1,7 @@
 @height : 430px;
 @padding-top: 130px;
-@font: "Avenir Next";
 
 .title {
-    font-family: @font;
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 2.7px;
@@ -13,7 +11,6 @@
 }
 
 .description {
-    font-family: "Avenir";
 	font-size: 16px;
 	letter-spacing: 1.5px;
 	text-align: center;
@@ -21,17 +18,17 @@
     padding-bottom: 30px;
 }
 
-.apl-sec {
+.apply-section {
     height: @height;
    
-    .employer {
+    &__employer {
         background-image: url('../../../../assets/images/bg-im-employer.png');
         height: @height;
         padding-top: @padding-top;
         text-align: center;
         
     }
-    .candidate {
+    &__candidate {
         background-image: url('../../../../assets/images/bg-im-candidate.png');
         height: @height;
         padding-top: @padding-top;

@@ -2,8 +2,9 @@ import React from 'react';
 import { Layout } from 'antd';
 import PropTypes from 'prop-types';
 import TSHeader from '../../containers/TSHeader';
+import TSFooter from '../../containers/TSFooter';
 
-const { Footer, Content } = Layout;
+const { Content } = Layout;
 
 const MainLayout = ({ children }) => (
   <Layout>
@@ -11,7 +12,7 @@ const MainLayout = ({ children }) => (
     <Content>
       {children}
     </Content>
-    <Footer>Footer</Footer>
+    <TSFooter />
   </Layout>
 );
 
