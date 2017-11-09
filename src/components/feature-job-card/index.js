@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'antd';
-import TSButton from '../button';
+import TSButton from '../TSButton';
 
 import './feature-job-card.less';
 import iconSalary from '../../assets/images/icon-lasary.svg';

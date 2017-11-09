@@ -3,7 +3,7 @@ import { Row, Col } from 'antd';
 
 import './search-section.less';
 import TSInput from '../../../../components/input';
-import TSButton from '../../../../components/button';
+import TSButton from '../../../../components/TSButton';
 import TSSelect from '../../../../components/select';
 
 export default class SearchSection extends Component {
