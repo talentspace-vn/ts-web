@@ -1,11 +1,13 @@
+@import '../../index.less';
+
 .fj-card {
     
     height: 179px;
     border-radius: 5px;
     background-color: #ffffff;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
-    padding-top: 20px;
-    .row {
+    padding-top: 20px;    
+    &__row {
         padding-left: 20px;
         ul {
             li {
@@ -13,43 +15,38 @@
             }
         }
     }
-    .title {
-        font-family: AvenirNext;
+    &_title {
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 1.2px;
         color: #141414;
     }
 
-    .company {
-        font-family: AvenirNext;
+    &_company {
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 1.1px;
         color: #4990e2;
     }
-    .salary {
-        font-family: AvenirNext;
+    &_salary {
         font-size: 16px;
         font-weight: 600;
         letter-spacing: 1.1px;
         color: #e94347;
     }
 
-    .location {
-        font-family: AvenirNext;
+    &_location {
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 1.1px;
         color: #a3a3a3;
     }
-    .requires {
+    &__requires {
         padding-top: 5.5px;
         padding-bottom: 7px;
         border-top: solid 1px #ececec;
-        .skills {
+        &__skills {
             padding-left: 20px;
-            font-family: AvenirNext;
             font-size: 12px;
             font-weight: 600;
             letter-spacing: 0.8px;
