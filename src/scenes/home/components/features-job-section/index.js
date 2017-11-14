@@ -7,11 +7,23 @@ export default class FeatureJobSection extends Component {
   render() {
     return (
       <section className="fj-section">
-        <div>
+        <div className="fj-section_wrap">
           <p className="fj-section_title">FEATURED JOBS</p>
           <div className="fj-section_line" />
           <div className="fj-section__list">
             <Row className="fj-section__list__row">
+              <Col span={10} offset={1}>
+                <FeatureJobCard />
+              </Col>
+              <Col span={10} offset={1}>
+                <FeatureJobCard />
+              </Col>
+              <Col span={10} offset={1}>
+                <FeatureJobCard />
+              </Col>
+              <Col span={10} offset={1}>
+                <FeatureJobCard />
+              </Col>
               <Col span={10} offset={1}>
                 <FeatureJobCard />
               </Col>
