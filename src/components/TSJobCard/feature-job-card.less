@@ -2,7 +2,7 @@
 .fj-card {
     height: 179px;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: @ts-white;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
     padding-top: 20px;
     margin-top: 24px;
@@ -17,33 +17,33 @@
     }
     &_title {
         #fonts > .sans-serif('AvenirNext-DemiBold', normal, 18px, 1.2px);
-        color: #141414;
+        color: @ts-blue-mirage;
     }
 
     &_company {
         #fonts > .sans-serif('AvenirNext-Medium', normal, 16px, 1.1px);
-        color: #4990e2;
+        color: @ts-blue-havelock;
     }
     &_salary {
         #fonts > .sans-serif('AvenirNext-Medium', normal, 16px, 1.1px);
-        color: #e94347;
+        color: @ts-red;
     }
 
     &_location {
         #fonts > .sans-serif('AvenirNext-Medium', normal, 16px, 1.1px);
-        color: #a3a3a3;
+        color: @ts-gray;
     }
     &__requires {
         padding-top: 5.5px;
         padding-bottom: 7px;
-        border-top: solid 1px #ececec;
+        border-top: solid 1px @ts-white;
         &__skills {
             padding-left: 20px;
             #fonts > .sans-serif('AvenirNext-Medium', normal, 12px, 0.8px);
             color: #424242;
             span{
                 #fonts > .sans-serif(normal, 12px, 0.8px);
-                color: #a3a3a3;
+                color: @ts-gray;
             
             }
         }
