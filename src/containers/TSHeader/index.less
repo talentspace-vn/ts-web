@@ -1,3 +1,4 @@
+@import "../../index.less";
 .header {
   background-color: #10223f;
   color: white;
@@ -11,12 +12,11 @@
       margin-top: 20px;
   }
   &__menu {
+    #fonts > .sans-serif('AvenirNext-Medium', normal, 16px);
     display: flex;
     justify-content: center;
     background: transparent;
     border-bottom: none;
-    font-size: 16px;
-    font-family: 'AvenirNext-Medium', sans-serif;
     & .ant-menu-item {
       color: white;
       &:hover {
@@ -31,4 +31,3 @@
     margin-right: 20px
   }
 }
-
