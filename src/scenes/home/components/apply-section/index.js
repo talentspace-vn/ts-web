@@ -8,14 +8,14 @@ export default class ApplySection extends PureComponent {
     return (
       <section className="apply-section">
         <Row>
-          <Col span={12}>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12} >
             <div className="apply-section__employer">
               <p className="title">I AM AN EMPLOYER</p>
               <p className="description"> Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
               <TSButton borderRadius={4} width={169} color="#e94347" type="background-white">Apply</TSButton>
             </div>
           </Col>
-          <Col span={12}>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
             <div className="apply-section__candidate">
               <p className="title">I AM AN CANDIDATE</p>
               <p className="description"> Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>

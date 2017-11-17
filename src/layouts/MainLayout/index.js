@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Affix } from 'antd';
+import { Layout } from 'antd';
 import PropTypes from 'prop-types';
 import TSHeader from '../../containers/TSHeader';
 import TSFooter from '../../containers/TSFooter';
@@ -8,10 +8,7 @@ const { Content } = Layout;
 
 const MainLayout = ({ children }) => (
   <Layout>
-    <Affix>
-      <TSHeader />
-    </Affix>
-
+    <TSHeader />
     <Content>
       {children}
     </Content>

@@ -18,18 +18,7 @@ export default class FeatureJobSection extends Component {
               <Col span={10} offset={1}>
                 <FeatureJobCard />
               </Col>
-              <Col span={10} offset={1}>
-                <FeatureJobCard />
-              </Col>
-              <Col span={10} offset={1}>
-                <FeatureJobCard />
-              </Col>
-              <Col span={10} offset={1}>
-                <FeatureJobCard />
-              </Col>
-              <Col span={10} offset={1}>
-                <FeatureJobCard />
-              </Col>
+              
             </Row>
           </div>
         </div>
