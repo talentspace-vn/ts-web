@@ -9,10 +9,10 @@ const { Header } = Layout;
 const TSHeader = () => (
   <Header className="header">
     <Row className="header__container" type="flex" align="middle" justify="space-between">
-      <Col span={6}>
+      <Col span={6} >
         <img src={logo} className="header__logo" alt="logo" />
       </Col>
-      <Col span={12}>
+      <Col span={12} >
         <Menu
           className="header__menu"
           theme="dark"

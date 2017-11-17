@@ -7,6 +7,7 @@
 @ts-gray: #A3A3A3;
 @ts-blue-havelock: #4D92DF;
 @ts-blue-mirage: #0C192D;
+@ts-white: #ffffff;
 /*------------------------------------*\
   #FONT
 \*------------------------------------*/
@@ -70,4 +71,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'AvenirNext-Regular', sans-serif;
+}
+
+#fonts {
+  .sans-serif (@family: 'AvenirNext-Regular', @weight: normal, @size: 16px, @letterSpacing: 0px) { // , @lineHeight: 20px
+    font-family: @family, sans-serif;
+    font-weight: @weight;
+    font-size: @size;       
+    letter-spacing: @letterSpacing;
+  }
 }

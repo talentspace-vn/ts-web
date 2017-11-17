@@ -19,7 +19,7 @@
     "build": "react-app-rewired build",
     "deploy:dev": "npm run build && aws s3 sync build/ s3://ts-website-dev",
     "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-app-rewired eject",
+    "eject": "react-scripts eject",
     "eslint": "./node_modules/.bin/eslint src/**/*.js",
     "eslint-fix": "./node_modules/.bin/eslint src/**/*.js --fix"
   },
