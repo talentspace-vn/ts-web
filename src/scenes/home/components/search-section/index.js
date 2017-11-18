@@ -17,13 +17,13 @@ export default class SearchSection extends Component {
           <Col span={20} offset={2}>
             <div className="search-section__field">
               <Row>
-                <Col span={12}>
+                <Col span={12} xs={22} sm={8} md={10} lg={12} xl={12}>
                   <TSInput className="search-section__field_input" title="Keyword" />
                 </Col>
-                <Col span={6}>
+                <Col span={6} xs={22} sm={6} md={6} lg={6} xl={8}>
                   <TSSelect className="search-section__field_select" title="Location" />
                 </Col>
-                <Col span={6}>
+                <Col span={6} xs={22} sm={10} md={8} lg={6} xl={4}>
                   <TSButton className="search-section__field_button" type="primary" height={50} borderRadius={4} width={185} >FIND JOB</TSButton>
                 </Col>
               </Row>
