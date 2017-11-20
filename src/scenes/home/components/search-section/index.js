@@ -20,7 +20,11 @@ export default class SearchSection extends Component {
             <div className="search-section__field">
               <Row className="search-section__field_row" gutter={16}>
                 <Col span={12} xs={22} sm={8} md={10} lg={12} xl={10}>
-                  <TSInput className="search-section__field_input" title="Keyword" />
+                  <TSInput
+                    className="search-section__field_inputContainer"
+                    inputClass="search-section__field_input"
+                    title="Keyword"
+                  />
                 </Col>
                 <Col span={6} xs={22} sm={6} md={6} lg={6} xl={8}>
                   <TSSelect className="search-section__field_select" title="Location" />

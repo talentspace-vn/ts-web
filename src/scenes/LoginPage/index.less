@@ -1,0 +1,27 @@
+@import '../../index.less';
+
+.loginPage {
+  text-align: center;
+  height: 80vh;
+  &__title {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: 'AvenirNext-DemiBold', sans-serif;
+  }
+  &__form {
+    margin-top: 30px;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: @ts-blue-mirage;
+    width: 470px;
+    @media @mobile {
+      width: 80vw;
+      padding: 30px;
+    }
+
+    &__submitBtn {
+      padding-top: 20px;
+    }
+  }
+}
