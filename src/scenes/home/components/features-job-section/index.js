@@ -12,10 +12,10 @@ export default class FeatureJobSection extends Component {
           <div className="fj-section_line" />
           <div className="fj-section__list">
             <Row className="fj-section__list__row">
-              <Col span={10} offset={1}>
+              <Col span={10} offset={1} xs={20} sm={20} md={20} lg={11} xl={10}>
                 <FeatureJobCard />
               </Col>
-              <Col span={10} offset={1}>
+              <Col span={10} offset={1} xs={20} sm={20} md={20} lg={11} xl={10}>
                 <FeatureJobCard />
               </Col>
               
