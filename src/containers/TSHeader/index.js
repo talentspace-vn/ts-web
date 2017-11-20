@@ -1,10 +1,32 @@
 import React from 'react';
-import { Row, Col, Layout, Menu } from 'antd';
+import { Row, Col, Layout, Menu, Dropdown, Icon, Button } from 'antd';
 import './index.less';
 import logo from '../../assets/images/logo-header.svg';
 import TSButton from '../../components/TSButton';
 
 const { Header } = Layout;
+const menu = (
+  <Menu>
+    <Menu.Item key="0">
+      <a>JOBS</a>
+    </Menu.Item>
+    <Menu.Item key="1">
+      <a>CANDIDATES</a>
+    </Menu.Item>
+    <Menu.Item key="2">
+      <a>EMPLOYERS</a>
+    </Menu.Item>
+    <Menu.Item key="3">
+      <a>PRICING</a>
+    </Menu.Item>
+    <Menu.Item key="4">
+      <a>CONTACT US</a>
+    </Menu.Item>
+    <Menu.Divider />
+    <Menu.Item key="5">LOGIN</Menu.Item>
+    <Menu.Item key="6">APPLY</Menu.Item>
+  </Menu>
+);
 
 const TSHeader = () => (
   <Header className="header">
@@ -12,7 +34,7 @@ const TSHeader = () => (
       <Col span={6} >
         <img src={logo} className="header__logo" alt="logo" />
       </Col>
-      <Col span={12} >
+      <Col span={12} className="header_full">
         <Menu
           className="header__menu"
           theme="dark"
@@ -25,9 +47,14 @@ const TSHeader = () => (
           <Menu.Item key="5">CONTACT US</Menu.Item>
         </Menu>
       </Col>
-      <Col span={6} style={{ textAlign: 'right' }}>
+      <Col span={6} style={{ textAlign: 'right' }} className="header_full">
         <TSButton className="header__btnSignIn">Sign In</TSButton>
-        <TSButton type="primary"> Apply </TSButton>
+        <TSButton className="header__btnApply" type="primary"> Apply </TSButton>
+      </Col>
+      <Col className="header_dropdown">
+        <Dropdown overlay={menu} trigger={['click']}>
+          <TSButton className="header__btnDropdown" borderRadius={4}>  <Icon type="bars" /> </TSButton>
+        </Dropdown>
       </Col>
     </Row>
   </Header>
