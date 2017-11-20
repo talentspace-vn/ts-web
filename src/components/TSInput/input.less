@@ -1,31 +1,25 @@
-.ts-input {
-    border: none;
-    background-color: transparent;
-    color: white;
-    border-bottom: 1px solid #3B4656;
+.tsInput {
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid #3B4656;
+  font-family: inherit;
+  letter-spacing: 1px;
+  padding-left: 0px;
+  
+  &:focus {
+    outline: none; // removes blue outline on focus
+    border: 0;  // removes border
+    box-shadow: none;
+    border-bottom: 1px solid #49a9ee;
     border-radius: 0;
-    font-family: Avenir-Roman;
-	font-size: 16px;
-	letter-spacing: 1.5px;
-    padding-left: 0px;
-    
-    
-    &:focus {
-        outline: none; // removes blue outline on focus
-        border: 0;  // removes border
-        box-shadow: none; //
-        border-bottom: 1px solid #49a9ee;
-        border-radius: 0;
-    }
+  }
 
-
-}
-
-.title-name-input {
-	width: 65px;
-	height: 19px;
-	font-family: Avenir-Roman;
-	font-size: 14px;
-	letter-spacing: 1.3px;
-	color: #45546c;
+  &__title {
+    text-align: left;
+    font-family: inherit;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    color: #45546c;
+  }
 }
