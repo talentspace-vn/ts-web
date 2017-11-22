@@ -34,7 +34,7 @@ const TSHeader = () => (
       <Col span={6} >
         <img src={logo} className="header__logo" alt="logo" />
       </Col>
-      <Col span={12} className="header_full">
+      <Col span={12} className="header__full">
         <Menu
           className="header__menu"
           theme="dark"
@@ -47,13 +47,13 @@ const TSHeader = () => (
           <Menu.Item key="5">CONTACT US</Menu.Item>
         </Menu>
       </Col>
-      <Col span={6} style={{ textAlign: 'right' }} className="header_full">
+      <Col span={6} style={{ textAlign: 'right' }} className="header__full">
         <TSButton className="header__btnSignIn">Sign In</TSButton>
         <TSButton className="header__btnApply" type="primary"> Apply </TSButton>
       </Col>
-      <Col className="header_dropdown">
+      <Col className="header__dropdown">
         <Dropdown overlay={menu} trigger={['click']}>
-          <TSButton className="header__btnDropdown" borderRadius={4}>  <Icon type="bars" /> </TSButton>
+          <TSButton className="header__btnDropdown" borderRadius={4} icon="bars" />
         </Dropdown>
       </Col>
     </Row>
