@@ -11,17 +11,11 @@ export default class TSDeveloperCard extends PureComponent {
             <Col span={24}>
               <Col span={20}>
                 <div className="ts-dev-card__container-description">
-                  <p className="ts-dev-card__container-description_quote"> “Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus”</p>
+                  <p className="ts-dev-card__container-description__quote"> “Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus”</p>
                 </div>
-                <p className="ts-dev-card__container-description_name">Giap Vo,</p>
-                <p className="ts-dev-card__container-description_postion">iOS Developer</p>
-              </Col>
-            </Col>
-            <Col span={24}>
-              <Col span={22}>
-                <div className="ts-dev-card__list-developer">
-                  <Avatar className="ts-dev-card__list-developer_item" size="large" style={{ backgroundColor: '#87d068' }} icon="user" />
-                </div>
+                <Avatar className="ts-dev-card__avatar" size="large" style={{ backgroundColor: '#87d068' }} icon="user" />
+                <p className="ts-dev-card__container-description__name">Giap Vo,</p>
+                <p className="ts-dev-card__container-description__postion">iOS Developer</p>
               </Col>
             </Col>
           </Row>

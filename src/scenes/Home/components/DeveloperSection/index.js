@@ -7,7 +7,7 @@ export default class DeveloperSection extends Component {
   render() {
     return (
       <section className="dev-section" >
-        <Carousel>
+        <Carousel autoplay>
           <div>
             <TSDeveloperCard />
           </div>
