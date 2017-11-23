@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch } from 'react-router-dom';
 import { MainLayoutRoute, SubLayoutRoute } from './routes';
-import Home from './scenes/home';
+import Home from './scenes/Home';
 import LoginPage from './scenes/LoginPage';
 
 class App extends Component {

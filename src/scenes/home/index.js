@@ -3,11 +3,11 @@ import React from 'react';
 import { BackTop } from 'antd';
 
 import './home.less';
-import SearchSection from './components/search-section';
-import FeatureJobSection from './components/features-job-section';
-import ApplySection from './components/apply-section';
-import TopCompanySection from './components/top-company-section';
-import DeveloperSection from './components/developer-section';
+import SearchSection from './components/SearchSection';
+import FeatureJobSection from './components/FeaturesJobSection';
+import ApplySection from './components/ApplySection';
+import TopCompanySection from './components/TopCompanySection';
+import DeveloperSection from './components/DeveloperSection';
 
 class Home extends React.Component {
   render() {

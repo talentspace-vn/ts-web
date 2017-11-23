@@ -26,29 +26,31 @@
         border-radius: 4px;
         background-color: #0C192D;
         margin-top: 15px;
-        margin-left: 40px;
-        margin-right: 40px;
-        &_inputContainer {
+        padding-bottom: 15px;
+        
+        &__inputContainer {
           padding-bottom: 26px;
           margin-top: 24px;
         }
-        &_row {
-          padding-left: 35px;
+        &__row {
+        //   padding-left: 35px;
+            padding-left: 30px;
+            padding-right: 30px;
         }
-        &_input {
+        &__input {
           font-size: 16px!important;
         }
-        &_select {
+        &__select {
             margin-top: 24px;
         }
         @media screen and (max-width: 768px) {
-            &_button {
+            &__button {
                 margin-top: 26px;
                 width: 100%;
             }
         }
         @media (min-width: 768px)  {
-            &_button {
+            &__button {
                 margin-top: 26px;
                 width: 185px;
             }
@@ -58,12 +60,6 @@
     
 }
 
-
-
-
-.search-button-top {
-   
-}
 
 .search-select {
     &:extend(.search-button-top);
