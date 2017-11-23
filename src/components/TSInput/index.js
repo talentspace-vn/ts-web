@@ -7,13 +7,13 @@ import './input.less';
 
 export default class TSInput extends PureComponent {
   render() {
-    const { title, className, inputClass, ...props } = this.props;
+    const { title, className, inputClass, type, ...props } = this.props;
     return (
       <div className={classnames('tsInput__container', className)}>
         <div className="tsInput__title">
           {title}
         </div>
-        <Input className={classnames('tsInput', inputClass)} {...props} />
+        <Input type={type} className={classnames('tsInput', inputClass)} {...props} />
       </div>
     );
   }
@@ -22,5 +22,10 @@ export default class TSInput extends PureComponent {
 TSInput.propTypes = {
   title: PropTypes.string,
   className: PropTypes.string,
-  inputClass: PropTypes.string
+  inputClass: PropTypes.string,
+  type: PropTypes.string
+};
+
+TSInput.defaultProps = {
+  type: 'text'
 };
