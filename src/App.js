@@ -4,6 +4,8 @@ import { MainLayoutRoute, SubLayoutRoute } from './routes';
 import Home from './scenes/Home';
 import LoginPage from './scenes/LoginPage';
 import ApplyCandidate from './scenes/ApplyCandidate';
+import ApplyEmployer from './scenes/ApplyEmployer';
+import PageNotFound from './scenes/404';
 
 class App extends Component {
   render() {
@@ -12,6 +14,8 @@ class App extends Component {
         <MainLayoutRoute exact path="/" component={Home} />
         <SubLayoutRoute path="/login" component={LoginPage} />
         <SubLayoutRoute path="/apply-candidate" component={ApplyCandidate} />
+        <SubLayoutRoute path="/apply-employer" component={ApplyEmployer} />
+        <SubLayoutRoute path="*" component={PageNotFound} />
       </Switch>
     );
   }
