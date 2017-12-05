@@ -10,6 +10,7 @@ export default class SearchSection extends Component {
   render() {
     return (
       <section className="search-section">
+        <section className="search-section_first-wrap">
         <Row>
           <Col span={20} offset={2}>
             <p className="search-section_title">MEET GREAT COMPANY<span>.</span> GET YOUR DREAM JOB<span>.</span></p>
@@ -36,6 +37,7 @@ export default class SearchSection extends Component {
             </div>
           </Col>
         </Row>
+        </section>
       </section>
     );
   }

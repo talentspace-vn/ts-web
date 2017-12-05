@@ -2,10 +2,11 @@
 
 
 .header {
-  background-color: #10223f;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
   color: white;
-  padding: 20px 50px;
-  // height: 90px;
   &__full {
     @media screen and (max-width: 1100px) {
       display:none;
@@ -27,11 +28,12 @@
       margin-top: 20px;
   }
   &__menu {
-    #fonts > .sans-serif('AvenirNext-Medium', normal, 16px);
+    #fonts > .sans-serif('Open Sans', 400, 15px);
     display: flex;
     justify-content: center;
     background: transparent;
     border-bottom: none;
+    text-transform: none;
     & .ant-menu-item {
       color: white;
       &:hover {
@@ -43,12 +45,12 @@
     }
   }
   &__btnSignIn {
-    width:116px;
+    // width:116px;
   }
   &__btnApply {
-    width:116px;
-    margin-right: -33px;
-    margin-left: 10px;
+    // width:116px;
+    // margin-right: -33px;
+    // margin-left: 10px;
   }
   &__btnDropdown {
     width: 50px ;
