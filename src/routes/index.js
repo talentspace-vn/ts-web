@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import { Spin } from 'antd';
 import Loadable from 'react-loadable';
 import DefaultLayout from '../layouts/DefaultLayout';
+import Page404 from '../containers/Page404';
 
 /**
  * Example for code-splitting with react-router using react-loadable library
@@ -20,6 +21,7 @@ class Routes extends PureComponent {
       <DefaultLayout>
         <Switch>
           <Route exact path="/" component={AsyncHomePage} />
+          <Route component={Page404} />
         </Switch>
       </DefaultLayout>
     );
