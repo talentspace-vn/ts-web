@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Spin } from 'antd';
 import Loadable from 'react-loadable';
+import DefaultLayout from '../layouts/DefaultLayout';
 
 /**
  * Example for code-splitting with react-router using react-loadable library
@@ -10,15 +11,17 @@ import Loadable from 'react-loadable';
  */
 const AsyncHomePage = Loadable({
   loader: () => import('../containers/HomePage'),
-  loading: () => <Spin />,
+  loading: () => <Spin />
 });
 
 class Routes extends PureComponent {
   render() {
     return (
-      <Switch>
-        <Route exact path="/" component={AsyncHomePage} />
-      </Switch>
+      <DefaultLayout>
+        <Switch>
+          <Route exact path="/" component={AsyncHomePage} />
+        </Switch>
+      </DefaultLayout>
     );
   }
 }
