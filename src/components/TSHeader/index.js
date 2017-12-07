@@ -46,6 +46,7 @@ class TSHeader extends PureComponent {
               size="large"
               icon="login"
               className="ts-header__btn-login"
+              
             >
               Login
             </TSButton>
