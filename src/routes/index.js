@@ -4,6 +4,7 @@ import { Spin } from 'antd';
 import Loadable from 'react-loadable';
 import DefaultLayout from '../layouts/DefaultLayout';
 import Page404 from '../containers/Page404';
+import LoginPage from '../containers/LoginPage';
 
 /**
  * Example for code-splitting with react-router using react-loadable library
@@ -21,6 +22,7 @@ class Routes extends PureComponent {
       <DefaultLayout>
         <Switch>
           <Route exact path="/" component={AsyncHomePage} />
+          <Route path="/login" component={LoginPage} />
           <Route component={Page404} />
         </Switch>
       </DefaultLayout>
