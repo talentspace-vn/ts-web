@@ -1,26 +1,27 @@
 import React, { PureComponent } from 'react';
 import TSTextField from '../../components/TSTextField';
 import TSButton from '../../components/TSButton';
-import { Icon, Row, Col, Checkbox } from 'antd';
+import { Icon, Row, Col, Select } from 'antd';
 import './index.less';
+import '../LoginPage/index.less';
 
-class LoginPage extends PureComponent {
-
+const Option = Select.Option;
+class ApplyPage extends PureComponent {
   constructor(props) {
     super(props);
-    this.onChange = this.onChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
-  onChange(e) {
-    console.log(`checked = ${e.target.checked}`);
+  handleChange(value) {
+    console.log(`selected ${value}`);
   }
   render() {
     return (
       <div className="App">
-        <Row>
+        <Row className="login-page">
           <Row type="flex" justify="space-around" align="middle" className="ts-login-header">
             <Col span={8}>
               <Col span={6} offset={6} />
-              <span className="ts-login-header_login-text">Login</span> <br />
+              <span className="ts-login-header_login-text">Apply</span> <br />
               <Col span={6} offset={6} />
               <span className="ts-login-header_sub-title">Keep up to date with the latest news</span>
             </Col>
@@ -32,19 +33,29 @@ class LoginPage extends PureComponent {
                 <span> Lorem ipsum dolor sit amet consectetur adipiscing elit odio duis risus at lobortis ullamcorper aptent venenatis, mi sem posuere est consequat rutrum.</span>
               </Row>
               <Row type="flex" justify="center">
+                <Col span={13}>
+                  <Row type="flex" justify="center">
+                    <Col span={10} style={{ textAlign: 'center' }}>
+                      <TSButton size="large" className="ts-apply-button" style={{ borderColor: '#141f72' }}> Candidates </TSButton>
+                    </Col>
+                    <Col span={10} style={{ textAlign: 'center' }}>
+                      <TSButton size="large" className="ts-apply-button" style={{ borderColor: '#fb236a' }}> Employer </TSButton>
+                    </Col>
+                  </Row>
+                </Col>
                 <Col span={13} style={{ marginBottom: '0' }}>
                   <TSTextField type="text" placeholder="Username" prefix={<Icon type="user" />} />
                   <TSTextField type="password" placeholder="Password" prefix={<Icon type="key" />} />
+                  <TSTextField type="text" placeholder="Email" prefix={<Icon type="mail" />} />
+                  <Select placeholder="Please Select Specialism" className="ts-apply-select" onChange={this.handleChange}>
+                    <Option value="huy">Huy</Option>
+                    <Option value="nguyen">Nguyen</Option>
+                  </Select>
+                  <TSTextField type="text" placeholder="Phone Number" prefix={<Icon type="phone" />} />
                 </Col>
                 <Col span={13}>
-                  <Row gutter={16}>
-                    <Col span={12}><Checkbox onChange={this.onChange}>Remember me</Checkbox> </Col>
-                    <Col span={12} style={{ textAlign: 'right' }}><a>Forgot Password?</a></Col>
-                  </Row>
-                </Col>
-                <Col span={13}>
-                  <TSButton size="large" className="ts-login-content__btn-login">
-                    Login
+                  <TSButton size="large" className="ts-login-content__btn-apply">
+                    Apply
                   </TSButton>
                 </Col>
                 <Col span={13}>
@@ -73,4 +84,4 @@ class LoginPage extends PureComponent {
   }
 }
 
-export default LoginPage;
+export default ApplyPage;
