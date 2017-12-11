@@ -1,6 +1,9 @@
 .ts-feature-job-card{
   border: none !important;
   margin-bottom: 1px;
+  &:hover {
+    border-left: 2px solid #8b91dd !important;
+  }
   &--border-top {
     border-top: 1px solid #edeff7 !important;
   }
@@ -42,11 +45,19 @@
     font-family: 'AvenirNext-Medium', sans-serif;
     padding: 10 30px !important;
     height: 33px;
-    width: 103px;
+    width: 130px;
     margin-left: 30px;
     &--fulltime {
       color: #8b91dd;
       border-color: #8b91dd;
+    }
+    &--parttime {
+      color: #7dc246;
+      border-color: #7dc246;
+    }
+    &--freelance {
+      color: #fb236a;
+      border-color: #fb236a;
     }
     &:hover {
       color: @primary-color;

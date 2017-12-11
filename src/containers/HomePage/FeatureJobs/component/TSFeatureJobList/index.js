@@ -7,15 +7,16 @@ class TSFeatureJobList extends PureComponent {
   render() {
     return (
       <div className="feature-job-list">
-        <TSFeatureJobCard />
-        <TSFeatureJobCard />
+        {this.props.dataSource.map( (job,index) => (
+           <TSFeatureJobCard key={index} data={job}/>
+        ))}
       </div>
     );
   }
 }
 
 TSFeatureJobList.propTypes = {
-
+  dataSource: PropTypes.array.isRequired
 };
 
 export default TSFeatureJobList;
