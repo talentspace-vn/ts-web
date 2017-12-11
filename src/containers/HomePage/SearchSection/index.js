@@ -8,6 +8,7 @@ import keyboardIcon from '../../../assets/images/keyboard_ico.svg';
 
 class SearchSection extends PureComponent {
   render() {
+    const dataSource = ['TP.Hồ Chí Minh', 'Hà Nội', 'Hải Phòng'];
     return (
       <div className="ts-search-section">
         <Row>
@@ -23,7 +24,7 @@ class SearchSection extends PureComponent {
                 <TSInput imageSrc={keyboardIcon} />
               </Col>
               <Col span={8}>
-                <TSAutocomplete />
+                <TSAutocomplete dataSource={dataSource} />
               </Col>
               <Col span={2}>
                 <TSButton className="ts-search-section__btnSearch">
