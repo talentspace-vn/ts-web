@@ -1,11 +1,10 @@
 import React, { PureComponent } from 'react';
+import { Icon, Row, Col, Checkbox } from 'antd';
 import TSTextField from '../../components/TSTextField';
 import TSButton from '../../components/TSButton';
-import { Icon, Row, Col, Checkbox } from 'antd';
 import './index.less';
 
 class LoginPage extends PureComponent {
-
   constructor(props) {
     super(props);
     this.onChange = this.onChange.bind(this);

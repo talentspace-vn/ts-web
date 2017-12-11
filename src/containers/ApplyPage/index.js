@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
+import { Icon, Row, Col, Select } from 'antd';
 import TSTextField from '../../components/TSTextField';
 import TSButton from '../../components/TSButton';
-import { Icon, Row, Col, Select } from 'antd';
 import './index.less';
 import '../LoginPage/index.less';
 
@@ -34,20 +34,20 @@ class ApplyPage extends PureComponent {
               </Row>
               <Row type="flex" justify="center">
                 <Col span={13}>
-                  <Row type="flex" justify="center">
-                    <Col span={10} style={{ textAlign: 'center' }}>
-                      <TSButton size="large" className="ts-apply-button" style={{ borderColor: '#141f72' }}> Candidates </TSButton>
+                  <Row type="flex" justify="center" className="ts-login-content_wrapper_apply">
+                    <Col span={10}>
+                      <TSButton size="large" className="ts-login-content_wrapper_apply__button" style={{ borderColor: '#141f72' }}>Candidates</TSButton>
                     </Col>
-                    <Col span={10} style={{ textAlign: 'center' }}>
-                      <TSButton size="large" className="ts-apply-button" style={{ borderColor: '#fb236a' }}> Employer </TSButton>
+                    <Col span={10}>
+                      <TSButton size="large" className="ts-login-content_wrapper_apply__button" style={{ borderColor: '#fb236a' }}>Employer</TSButton>
                     </Col>
                   </Row>
                 </Col>
-                <Col span={13} style={{ marginBottom: '0' }}>
+                <Col span={13} className="ts-login-content_wrapper_first">
                   <TSTextField type="text" placeholder="Username" prefix={<Icon type="user" />} />
                   <TSTextField type="password" placeholder="Password" prefix={<Icon type="key" />} />
                   <TSTextField type="text" placeholder="Email" prefix={<Icon type="mail" />} />
-                  <Select placeholder="Please Select Specialism" className="ts-apply-select" onChange={this.handleChange}>
+                  <Select placeholder="Please Select Specialism" className="ts-login-content_wrapper_first_apply-select" onChange={this.handleChange}>
                     <Option value="huy">Huy</Option>
                     <Option value="nguyen">Nguyen</Option>
                   </Select>
@@ -59,18 +59,18 @@ class ApplyPage extends PureComponent {
                   </TSButton>
                 </Col>
                 <Col span={13}>
-                  <Row type="flex" justify="center" align="middle">
-                    <Col xs={2} sm={4} md={6} lg={8} xl={10} style={{ height: '1px', backgroundColor: '#000000' }} />
-                    <Col xs={20} sm={16} md={12} lg={8} xl={4} style={{ textAlign: 'center' }}>Or</Col>
-                    <Col xs={2} sm={4} md={6} lg={8} xl={10} style={{ height: '1px', backgroundColor: '#000000' }} />
+                  <Row type="flex" justify="center" align="middle" className="ts-login-content_wrapper_seperate-social">
+                    <Col xs={2} sm={4} md={6} lg={8} xl={10} className="ts-login-content_wrapper_seperate-social_line" />
+                    <Col xs={20} sm={16} md={12} lg={8} xl={4} className="ts-login-content_wrapper_seperate-social_text">Or</Col>
+                    <Col xs={2} sm={4} md={6} lg={8} xl={10} className="ts-login-content_wrapper_seperate-social_line" />
                   </Row>
                 </Col>
                 <Col span={13}>
-                  <Row type="flex" justify="center">
-                    <Col span={4} style={{ textAlign: 'center' }}>
+                  <Row type="flex" justify="center" className="ts-login-content_wrapper_social">
+                    <Col span={4}>
                       <TSButton size="large" icon="facebook" className="ts-login-content__btn-login-social ts-login-content__btn-login-social___fa" />
                     </Col>
-                    <Col span={4} style={{ textAlign: 'center' }}>
+                    <Col span={4}>
                       <TSButton size="large" icon="twitter" className="ts-login-content__btn-login-social ts-login-content__btn-login-social___tw" />
                     </Col>
                   </Row>
