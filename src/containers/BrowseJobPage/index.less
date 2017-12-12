@@ -1,0 +1,36 @@
+.browsejob-page {
+  padding: 30px 100px;
+
+  &__filters {
+    padding-right: 50px;
+
+    & .ant-collapse {
+      border: none;
+      & .ant-collapse-item {
+        border-bottom: none;
+        & .ant-collapse-header {
+          padding: 15px 0px;
+          & .arrow {
+            left: 100%;
+          }
+          background: white;
+          font-family: 'AvenirNext-DemiBold', sans-serif;
+          font-size: 16px;
+        }
+        & .ant-collapse-content {
+          padding: 0px;
+          border-top: none;
+          & .ant-collapse-content-box {
+            padding-top: 0px;
+          }
+        }
+      }
+    }
+
+    &__radio-group,
+    &__checkbox-group{
+      display: grid;
+      grid-row-gap: 20px;
+    }
+  }
+}
