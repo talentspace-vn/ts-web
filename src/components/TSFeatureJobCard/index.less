@@ -1,0 +1,68 @@
+.ts-feature-job-card{
+  border: none !important;
+  margin-bottom: 1px;
+  &:hover {
+    border-left: 2px solid #8b91dd !important;
+  }
+  &--border-top {
+    border-top: 1px solid #edeff7 !important;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    float: left;
+  }
+  &__detail {
+    
+    &__position {
+      color: #202020;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 400;
+    }
+    &__name {
+      color: #fb236a;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  &__address {
+    color: #888888;
+    
+    &__name {
+      font-family: "Open Sans";
+      font-size: 15px;
+      font-weight: 400;
+      float: left;
+      margin-top: 4px;
+      padding-left: 5px;
+    }
+  }
+
+  &__btn-feature-job {
+    font-family: 'AvenirNext-Medium', sans-serif;
+    padding: 10 30px !important;
+    height: 33px;
+    width: 130px;
+    margin-left: 30px;
+    &--fulltime {
+      color: #8b91dd;
+      border-color: #8b91dd;
+    }
+    &--parttime {
+      color: #7dc246;
+      border-color: #7dc246;
+    }
+    &--freelance {
+      color: #fb236a;
+      border-color: #fb236a;
+    }
+    &:hover {
+      color: @primary-color;
+      background: transparent;
+    }
+  }
+
+}
