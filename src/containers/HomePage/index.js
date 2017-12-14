@@ -7,7 +7,7 @@ import FeatureJobSection from './FeatureJobs';
 class HomePage extends PureComponent {
   render() {
     return (
-      <div className="App">
+      <div>
         <Row>
           <Col span={24}>
             <SearchSection />
