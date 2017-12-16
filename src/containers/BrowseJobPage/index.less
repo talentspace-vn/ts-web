@@ -1,9 +1,13 @@
 .browsejob-page {
-  padding: 30px 100px;
+  padding: 30px 150px;
+
+  &__divider {
+    background-color: #edeff7;
+    height: 100vh;
+  }
 
   &__filters {
     padding-right: 50px;
-
     & .ant-collapse {
       border: none;
       & .ant-collapse-item {
@@ -32,5 +36,23 @@
       display: grid;
       grid-row-gap: 20px;
     }
+  }
+
+  &__active-filters {
+    border-radius: 8px;
+    border: 2px solid #e6e8ef;
+    padding: 5px;
+  }
+
+  &__status {
+    margin-top: 20px;
+    font-family: 'AvenirNext-Medium', sans-serif;
+    font-size: 20px;
+  }
+
+  &__job-list {
+    margin-top: 20px;
+    overflow: auto;
+    height: 100vh;
   }
 }

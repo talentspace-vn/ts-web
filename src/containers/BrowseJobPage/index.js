@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { Row, Col, Collapse, Radio, Checkbox, Slider } from 'antd';
+import { Row, Col, Collapse, Radio, Checkbox, Slider, Divider } from 'antd';
 import './index.less';
+import TSJobRow from './components/TSJobRow';
+import TSTag from './components/TSTag';
+import SAMPLE_JOBS from './sample_data.json';
 
 const { Panel } = Collapse;
 const RadioGroup = Radio.Group;
@@ -73,6 +76,14 @@ const SAMPLE_SALARY_RANGE = {
   1000: '$1000'
 };
 
+const SAMPLE_FILTER_TAGS = [
+  'NodeJS',
+  'JavaScript ASGDHJAGSHJGJHDS',
+  'Python',
+  'Ho Chi Minh',
+  'Ha Noi'
+];
+
 class BrowseJobPage extends Component {
   render() {
     return (
@@ -111,7 +122,22 @@ class BrowseJobPage extends Component {
             </Panel>
           </Collapse>
         </Col>
-        <Col span={18}>This is job list section</Col>
+        <Col span={1}>
+          <Divider type="vertical" className="browsejob-page__divider" />
+        </Col>
+        <Col span={17}>
+          <Row className="browsejob-page__active-filters">
+            {SAMPLE_FILTER_TAGS.map((tag, index) => (
+              <TSTag value={tag} key={tag} closable />
+            ))}
+          </Row>
+          <Row className="browsejob-page__status">
+            <div>{SAMPLE_JOBS.length} Jobs</div>
+          </Row>
+          <Row className="browsejob-page__job-list">
+            {SAMPLE_JOBS.map(job => <TSJobRow key={job.title} data={job} />)}
+          </Row>
+        </Col>
       </Row>
     );
   }
