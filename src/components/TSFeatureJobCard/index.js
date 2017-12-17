@@ -8,20 +8,19 @@ import IconMaker from '../../assets/images/icon-map-maker.svg';
 import IconLove from '../../assets/images/icon-love.svg';
 
 class TSFeatureJobCard extends PureComponent {
-  
   render() {
     const { className, ...props } = this.props;
-    const {position, companyName, address, jobType} = this.props.data;
+    const { position, companyName, address, jobType } = this.props.data;
     const _handleJobTypeClass = () => {
-        switch (jobType) {
-          case "PART TIME":
-            return "ts-feature-job-card__btn-feature-job--parttime ";
-          case "FREELANCE":
-            return "ts-feature-job-card__btn-feature-job--freelance";
-          default:
-            return "ts-feature-job-card__btn-feature-job--fulltime";
-        }
-    }
+      switch (jobType) {
+        case 'PART TIME':
+          return 'ts-feature-job-card__btn-feature-job--parttime ';
+        case 'FREELANCE':
+          return 'ts-feature-job-card__btn-feature-job--freelance';
+        default:
+          return 'ts-feature-job-card__btn-feature-job--fulltime';
+      }
+    };
     return (
       <Card hoverable {...props} className={classnames('ts-feature-job-card', 'ts-feature-job-card--border-top', className)}>
         <Row>
@@ -35,7 +34,7 @@ class TSFeatureJobCard extends PureComponent {
           </Col>
           <Col span={6}>
             <img className="ts-feature-job-card__icon" src={IconLove} />
-            <TSButton className= {classnames("ts-feature-job-card__btn-feature-job ", _handleJobTypeClass())} >{jobType}</TSButton>
+            <TSButton className={classnames('ts-feature-job-card__btn-feature-job ', _handleJobTypeClass())} >{jobType}</TSButton>
           </Col>
         </Row>
       </Card>

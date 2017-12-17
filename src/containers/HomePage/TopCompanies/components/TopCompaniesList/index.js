@@ -1,27 +1,25 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col, Card } from 'antd';
+import { Row, Col } from 'antd';
+import CompaniesCard from '../CompaniesCard';
 
 class TopCompaniesList extends Component {
   render() {
-    const gridStyle = {
-      width: '25%',
-      textAlign: 'center',
-      border: 'none'
-    };
     return (
       <Row className="top-companies-list">
-        <Col span={6}>
-          <Card className="top-companies-list__item" hoverable>
-            YTr
-          </Card>
-        </Col>
+        {this.props.dataSource.map((data, index) => (
+          <Col key={index} span={6}>
+            <CompaniesCard data={data} />
+          </Col>
+        ))}
+
       </Row>
     );
   }
 }
 
 TopCompaniesList.propTypes = {
+  dataSource: PropTypes.array.isRequired
 
 };
 
