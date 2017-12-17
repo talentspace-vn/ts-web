@@ -3,6 +3,7 @@ import { Row, Col } from 'antd';
 import './index.less';
 import SearchSection from './SearchSection';
 import FeatureJobSection from './FeatureJobs';
+import TopCompanies from './TopCompanies';
 
 class HomePage extends PureComponent {
   render() {
@@ -11,6 +12,7 @@ class HomePage extends PureComponent {
         <Row>
           <Col span={24}>
             <SearchSection />
+            <TopCompanies />
             <FeatureJobSection />
           </Col>
         </Row>
