@@ -5,6 +5,7 @@ import Loadable from 'react-loadable';
 import DefaultLayout from '../layouts/DefaultLayout';
 import Page404 from '../containers/Page404';
 import LoginPage from '../containers/LoginPage';
+import ApplyPage from '../containers/ApplyPage';
 
 /**
  * Example for code-splitting with react-router using react-loadable library
@@ -23,6 +24,7 @@ class Routes extends PureComponent {
         <Switch>
           <Route exact path="/" component={AsyncHomePage} />
           <Route path="/login" component={LoginPage} />
+          <Route path="/apply" component={ApplyPage} />
           <Route component={Page404} />
         </Switch>
       </DefaultLayout>

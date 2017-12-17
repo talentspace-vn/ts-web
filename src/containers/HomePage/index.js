@@ -8,7 +8,7 @@ import TopCompanies from './TopCompanies';
 class HomePage extends PureComponent {
   render() {
     return (
-      <div className="App">
+      <div>
         <Row>
           <Col span={24}>
             <SearchSection />
