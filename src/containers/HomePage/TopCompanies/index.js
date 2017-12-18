@@ -4,6 +4,7 @@ import { Row, Col } from 'antd';
 import './index.less';
 import TopCompaniesList from './components/TopCompaniesList';
 import ShapeImage from '../../../assets/images/shape-1.svg';
+import TSButton from '../../../components/TSButton';
 
 class TopCompanies extends Component {
   render() {
@@ -30,6 +31,9 @@ class TopCompanies extends Component {
             <TopCompaniesList dataSource={companies} />
           </Col>
         </Row>
+        <div className="ts-top-companies__btn-container">
+          <TSButton className="ts-top-companies--btn-load-companies">Load All Companies</TSButton>
+        </div>
       </div>
     );
   }

@@ -4,6 +4,7 @@ import './index.less';
 import SearchSection from './SearchSection';
 import FeatureJobSection from './FeatureJobs';
 import TopCompanies from './TopCompanies';
+import ApplySection from './ApplySection';
 
 class HomePage extends PureComponent {
   render() {
@@ -13,6 +14,7 @@ class HomePage extends PureComponent {
           <Col span={24}>
             <SearchSection />
             <TopCompanies />
+            <ApplySection />
             <FeatureJobSection />
           </Col>
         </Row>
