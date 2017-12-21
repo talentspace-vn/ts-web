@@ -1,0 +1,22 @@
+@import '../../../index.less';
+
+.developer-section {
+  height: 600px;
+  background-color: #8A93D8;
+  color: #ffffff;
+  text-align: center;
+  &__title {
+    padding-top: 60px;
+    #fonts.sans-serif(@family: 'Quicksand', @weight: 700, @size: 30px, @letterSpacing: 0px);
+    
+  }
+  &__subTitle {
+    #fonts.sans-serif(@family: 'Quicksand', @weight: 400, @size: 16px, @letterSpacing: 0px);
+  }
+  &__carousel {
+    padding-top: 60px;
+    &__item {
+      height: 300px !important;
+    }
+  }
+}
