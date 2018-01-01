@@ -47,18 +47,18 @@ class LoginPage extends PureComponent {
                   </TSButton>
                 </Col>
                 <Col span={13}>
-                  <Row type="flex" justify="center" align="middle">
-                    <Col xs={2} sm={4} md={6} lg={8} xl={10} style={{ height: '1px', backgroundColor: '#000000' }} />
-                    <Col xs={20} sm={16} md={12} lg={8} xl={4} style={{ textAlign: 'center' }}>Or</Col>
-                    <Col xs={2} sm={4} md={6} lg={8} xl={10} style={{ height: '1px', backgroundColor: '#000000' }} />
+                  <Row type="flex" justify="center" align="middle" className="ts-login-content_wrapper_seperate-social">
+                    <Col xs={2} sm={4} md={6} lg={8} xl={10} className="ts-login-content_wrapper_seperate-social_line" />
+                    <Col xs={20} sm={16} md={12} lg={8} xl={4} className="ts-login-content_wrapper_seperate-social_text">Or</Col>
+                    <Col xs={2} sm={4} md={6} lg={8} xl={10} className="ts-login-content_wrapper_seperate-social_line" />
                   </Row>
                 </Col>
                 <Col span={13}>
-                  <Row type="flex" justify="center">
-                    <Col span={4} style={{ textAlign: 'center' }}>
+                  <Row type="flex" justify="center" className="ts-login-content_wrapper_social">
+                    <Col span={4}>
                       <TSButton size="large" icon="facebook" className="ts-login-content__btn-login-social ts-login-content__btn-login-social___fa" />
                     </Col>
-                    <Col span={4} style={{ textAlign: 'center' }}>
+                    <Col span={4}>
                       <TSButton size="large" icon="twitter" className="ts-login-content__btn-login-social ts-login-content__btn-login-social___tw" />
                     </Col>
                   </Row>
