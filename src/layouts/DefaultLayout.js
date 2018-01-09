@@ -11,9 +11,9 @@ class DefaultLayout extends PureComponent {
   render() {
     const { children } = this.props;
     return (
-      <Layout>
+      <Layout className="ts-layout">
         <TSHeader />
-        <Content className="ts-content">
+        <Content>
           {children}
         </Content>
         <TSFooter />

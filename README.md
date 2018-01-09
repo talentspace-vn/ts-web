@@ -8,10 +8,10 @@
 * [axios](https://github.com/axios/axios): For HTTP request
 * [ant.design](https://ant.design): React UI Kit
 * [Jest](https://facebook.github.io/jest/)
-* [enzyme](http://airbnb.io/enzyme/) 
+* [enzyme](http://airbnb.io/enzyme/)
 * [storybook](https://storybook.js.org/basics/introduction/)
 
-## Recommended BLog
+## Recommended Blog
 * [React patterns, techniques, tips and tricks](https://vasanthk.gitbooks.io/react-bits)
 * [How to better organize your React applications?](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1)
 * [Testing-react-components-with-jest-and-enzyme](https://hackernoon.com/testing-react-components-with-jest-and-enzyme-41d592c174f)

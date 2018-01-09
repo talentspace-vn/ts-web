@@ -17,12 +17,18 @@ const AsyncHomePage = Loadable({
   loading: () => <Spin />
 });
 
+const AsyncBrowseJobPage = Loadable({
+  loader: () => import('../containers/BrowseJobPage'),
+  loading: () => <Spin />
+});
+
 class Routes extends PureComponent {
   render() {
     return (
       <DefaultLayout>
         <Switch>
           <Route exact path="/" component={AsyncHomePage} />
+          <Route exact path="/jobs" component={AsyncBrowseJobPage} />
           <Route path="/login" component={LoginPage} />
           <Route path="/apply" component={ApplyPage} />
           <Route component={Page404} />

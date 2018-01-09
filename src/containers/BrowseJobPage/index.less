@@ -1,0 +1,58 @@
+.browsejob-page {
+  padding: 30px 150px;
+
+  &__divider {
+    background-color: #edeff7;
+    height: 100vh;
+  }
+
+  &__filters {
+    padding-right: 50px;
+    & .ant-collapse {
+      border: none;
+      & .ant-collapse-item {
+        border-bottom: none;
+        & .ant-collapse-header {
+          padding: 15px 0px;
+          & .arrow {
+            left: 100%;
+          }
+          background: white;
+          font-family: 'AvenirNext-DemiBold', sans-serif;
+          font-size: 16px;
+        }
+        & .ant-collapse-content {
+          padding: 0px;
+          border-top: none;
+          & .ant-collapse-content-box {
+            padding-top: 0px;
+          }
+        }
+      }
+    }
+
+    &__radio-group,
+    &__checkbox-group{
+      display: grid;
+      grid-row-gap: 20px;
+    }
+  }
+
+  &__active-filters {
+    border-radius: 8px;
+    border: 2px solid #e6e8ef;
+    padding: 5px;
+  }
+
+  &__status {
+    margin-top: 20px;
+    font-family: 'AvenirNext-Medium', sans-serif;
+    font-size: 20px;
+  }
+
+  &__job-list {
+    margin-top: 20px;
+    overflow: auto;
+    height: 100vh;
+  }
+}
