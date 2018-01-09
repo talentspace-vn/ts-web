@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Row, Col } from 'antd';
 import './index.less';
 import TSFeatureJobList from './component/TSFeatureJobList';
+import TSButton from '../../../components/TSButton';
 
 class FeatureJobSection extends Component {
   render() {
@@ -27,6 +28,9 @@ class FeatureJobSection extends Component {
             <TSFeatureJobList dataSource={jobList} />
           </Col>
         </Row>
+        <div className="ts-featureJob-section__btn-container">
+          <TSButton className="ts-featureJob-section--btn-loadmore">Load more listings</TSButton>
+        </div>
       </div>
     );
   }
